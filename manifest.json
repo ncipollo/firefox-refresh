@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Refresh",
+    "version": "0.1.0",
+    "description": "helps me get into the PS5 queue =)",
+    "content_scripts": [
+        {
+            "matches": ["*://direct.playstation.com/en-us/consoles/console/playstation5-console.*"],
+            "js": ["jquery.js", "refresh.js"]
+        }
+    ]
+}
