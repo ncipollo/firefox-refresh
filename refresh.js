@@ -3,8 +3,11 @@ console.log("loaded refresh plugin!")
 if (isOutOfStock()) {
     console.log('out of stock!')
     if (shouldRefresh()) {
+        console.log('going to refresh!')
         printTime()
         refresh()
+    } else  {
+        console.log("it's too late, refresh manually tomorrow!")
     }
 } else {
     console.log('not out of stock!')
