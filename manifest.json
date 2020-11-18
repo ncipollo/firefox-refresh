@@ -5,7 +5,10 @@
     "description": "helps me get into the PS5 queue =)",
     "content_scripts": [
         {
-            "matches": ["*://direct.playstation.com/en-us/consoles/console/playstation5-console.*"],
+            "matches": [
+                "*://direct.playstation.com/en-us/consoles/console/playstation5-console.*",
+                "*://direct.playstation.com/en-us/consoles/console/playstation5-digital-edition-console.*"
+            ],
             "js": ["jquery.js", "refresh.js"]
         }
     ]
