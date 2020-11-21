@@ -21,7 +21,7 @@ function isOutOfStock() {
 function shouldRefresh() {
     let hours = new Date().getHours()
     // Auto-refresh between 10AM and 8PM
-    return hours >= 10 && hours <= 20
+    return hours >= 10 && hours <= 21
 }
 
 function refreshRate() {
